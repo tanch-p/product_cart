@@ -38,5 +38,13 @@ export default {
   modules: [],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {extend (config, { isDev, isClient }) {
+
+    config.node= {
+       fs: 'empty'
+     }
+ }},
+  server:{
+    port:3000
+  }
 }

@@ -1,8 +1,8 @@
 <template>
-  <Tutorial />
+  <ProductsList />
 </template>
 
-<script>
+<script setup>
 export default {
   name: 'IndexPage',
 }
