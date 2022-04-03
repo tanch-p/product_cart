@@ -1,0 +1,46 @@
+{
+  "title": {
+    "en": "Simple Product Cart",
+    "zh": "简易购物车",
+    "zh-CHT": "簡易購物車"
+  },
+  "products": { "en": "Products", "zh": "产品", "zh-CHT": "產品" },
+  "addToCart": {
+    "en": "Add to Cart",
+    "zh": "添加至购物车",
+    "zh-CHT": "添加至購物車"
+  },
+  "orderDetails": {
+    "en": "Order Details",
+    "zh": "购物车",
+    "zh-CHT": "購物車"
+  },
+  "cartEmpty": {
+    "en": "Cart is Empty",
+    "zh": "您的购物车里没有任何项目",
+    "zh-CHT": "您的購物車裡沒有任何項目"
+  },
+  "productDetails": {
+    "en": "Product Details",
+    "zh": "产品详细",
+    "zh-CHT": "產品詳細"
+  },
+  "qty": { "en": "Quantity", "zh": "数量", "zh-CHT": "數量" },
+  "price": { "en": "Price", "zh": "价格", "zh-CHT": "價格" },
+  "total": { "en": "Total", "zh": "总共", "zh-CHT": "總共" },
+  "remove": { "en": "Remove", "zh": "撤除", "zh-CHT": "撤除" },
+  "orderSummary": {
+    "en": "Order Summary",
+    "zh": "订单总结",
+    "zh-CHT": "訂單總結"
+  },
+  "totalItems": { "en": "Total Items", "zh": "总项目", "zh-CHT": "總項目" },
+  "subtotal": { "en": "Subtotal", "zh": "小计", "zh-CHT": "小計" },
+  "gst": { "en": "GST", "zh": "消费税", "zh-CHT": "消費稅" },
+  "amountPayable": {
+    "en": "Amount Payable",
+    "zh": "总计",
+    "zh-CHT": "總計"
+  },
+  "checkout": { "en": "Checkout", "zh": "前往订货", "zh-CHT": "前往訂貨" }
+}
