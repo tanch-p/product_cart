@@ -1,6 +1,7 @@
 {
   "id": "02",
-  "name": { "en": "Agent Visit", "zh": "代表拜访" },
-  "price": { "sgd": 200, "hkd": 1156 },
+  "name": { "en": "Agent Visit", "zh": "代表拜访","zh-CHT":"代表拜訪"},
+  "price": { "sg": 200, "hk": 1156 },
+  "qty":0,
   "svg": "M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
 }

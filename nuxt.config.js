@@ -18,7 +18,9 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: [
+    '@/assets/css/main.css',
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -32,19 +34,29 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxt/postcss8',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: ['@nuxtjs/i18n'],
+  i18n: {
+    locales: ['default','sg', 'hk'],
+    defaultLocale: 'default',
+    vueI18n: {
+      fallbackLocale: 'sg',
+    }
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {extend (config, { isDev, isClient }) {
-
-    config.node= {
-       fs: 'empty'
-     }
- }},
-  server:{
-    port:3000
-  }
+  build: {
+    postcss: {
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+      },
+    },
+  },
+  server: {
+    port: 3000,
+  },
 }

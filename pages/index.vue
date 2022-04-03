@@ -1,5 +1,10 @@
 <template>
-  <ProductsList />
+  <div>
+    <CountrySelector />
+    <ProductsList />
+    <OrderDetails />
+  </div>
+  
 </template>
 
 <script setup>

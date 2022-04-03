@@ -9,25 +9,45 @@
         stroke="currentColor"
         stroke-width="1"
       >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          :d='product.svg'
-        />
+        <path stroke-linecap="round" stroke-linejoin="round" :d="product.svg" />
       </svg>
     </div>
     <p class="text-blue-700 font-semibold">
-      {{ product.name.zh }}
+      {{ product.name[locale.language] }}
     </p>
-    <p>{{ product.price.hkd }}</p>
-    <div class="bg-blue-800 text-white cursor-pointer">Add to Cart</div>
+    <p>
+      {{ prices[locale.locale].currency }}{{ product.price[locale.locale] }}
+    </p>
+    <div
+      class="bg-blue-800 text-white cursor-pointer select-none w-full"
+      @click="addToCart(product)"
+    >
+      Add to Cart
+    </div>
   </div>
 </template>
 
 <script>
+import prices from '@/components/Prices.json'
+
 export default {
   props: {
     product: Object,
+  },
+  data() {
+    return {
+      prices,
+    }
+  },
+  computed: {
+    locale() {
+      return this.$store.state.country.option
+    },
+  },
+  methods: {
+    addToCart(product) {
+      this.$store.commit('cart/add', product)
+    },
   },
 }
 </script>

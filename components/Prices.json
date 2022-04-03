@@ -1,0 +1,4 @@
+{
+  "sg": { "currency": "S$", "gst": 7 },
+  "hk": { "currency": "HK$", "gst": 3 }
+}
